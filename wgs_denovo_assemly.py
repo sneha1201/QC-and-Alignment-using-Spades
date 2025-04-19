@@ -99,7 +99,7 @@ def main():
     # Assembly Stats (QUAST in same assembly folders)
     quast_commands = []
     for sample in sample_info["Sample"].unique():
-        contigs = os.path.join(spades_folder, sample, "contigs.fasta")  # Reference the sample-specific contigs file
+        contigs = os.path.join(spades_folder, sample, "scaffolds.fasta")  # Reference the sample-specific contigs file
         quast_out = os.path.join(spades_folder, sample, "assembly_stats")
         create_dir(quast_out)
 
