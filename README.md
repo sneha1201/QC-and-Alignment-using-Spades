@@ -72,23 +72,43 @@ assembly_stats: Contains QUAST-generated assembly statistics for each sample, pr
 The final directory structure will look like this:
 
 /path/to/output/
+
 │
+
 ├── 1_QC/
+
 │   ├── qc_before/
+
 │   ├── qc_after/
+
 │   └── multiqc/
+
 │
+
 ├── 2_Trimmed/
+
 │   ├── sample1_1_trimmed.fastq.gz
+
 │   ├── sample1_2_trimmed.fastq.gz
+
 │   ├── sample2_1_trimmed.fastq.gz
+
 │   └── sample2_2_trimmed.fastq.gz
+
 │
+
 ├── 3_Spades_Assembly/
+
 │   ├── sample1/
+
 │   │   ├── contigs.fasta
+
 │   │   └── assembly_stats/
+
 │   ├── sample2/
+
 │   │   ├── contigs.fasta
+
 │   │   └── assembly_stats/
+
 │   └── pipeline.log
